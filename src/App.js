@@ -1,13 +1,16 @@
-
 import ReactGA from "react-ga";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Sections from "./sections";
 function App() {
+  ReactGA.initialize("G-DEGNYRHPH3");
+  ReactGA.pageview(window.location.pathname);
   return (
     <div className="App">
       <body>
-        <div><Navbar /></div>
+        <div>
+          <Navbar />
+        </div>
         <div>
           <p id="a">Welcome to my website</p>
           <p class="text">

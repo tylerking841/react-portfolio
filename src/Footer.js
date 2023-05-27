@@ -11,14 +11,12 @@ const Footer = () => {
 
   return (
     <div class="footer">
-      <a>
         <img
           src={Email}
           alt="email png"
           id="email-icon"
           onClick={copyEmail}
         />
-      </a>
       <a
         href="https://github.com/tylerking841"
         target="_blank"

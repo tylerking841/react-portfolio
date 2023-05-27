@@ -64,10 +64,12 @@ section {
 
 #navbar {
   opacity: 1;
-  animation: 0.5s linear 0s 1 normal none running fadein;
+  /*animation: 0.5s linear 0s 1 normal none running fadein;*/
+  visibility: visible;
   z-index: 999;
   overflow: hidden;
-  background-color: rgb(43, 45, 53);
+  /*background-color: rgb(43, 45, 53);*/
+  background-color: rgb(43, 43, 44);
   left: 0px;
   right: 0px;
 }
@@ -83,6 +85,14 @@ section {
   font-size: 25px;
 }
 
+.navbar-a:hover {
+  color: rgb(89, 103, 148);
+}
+
+.link {
+  display: inline;
+}
+
 #navbar-name {
   float: left;
   font-weight: bold;
@@ -94,6 +104,24 @@ section {
   font-size: 25px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(26, 26, 32);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(57, 57, 70);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(71, 71, 82);
+}
+
 #a {
   font-size: 95px;
 }
@@ -101,6 +129,11 @@ section {
 #email-icon {
   height: auto;
   width: 5.75%;
+}
+
+#ball {
+  height: auto;
+  width: 30%;
 }
 
 #github {
@@ -112,6 +145,34 @@ section {
   margin-left: 17px;
   height: auto;
   width: 3%;
+}
+
+
+.question-input {
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.5;
+  opacity: 0;
+  animation: fadein;
+}
+
+button {
+  background-color: rgb(26, 26, 32);
+  color: rgb(197, 198, 201);
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #3c3b61;
+  color: rgb(197, 198, 201);
 }
 
 @keyframes fadein {

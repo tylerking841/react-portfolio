@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 import Resume from "./Files/resume.pdf";
+
 const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -26,12 +28,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header id="navbar" className={"sticky"}>
-      <li id="navbar-name">Tyler King</li>
+    <nav id="navbar" className={"sticky"}>
+      <Link id="navbar-name" to="/react-portfolio">
+        Tyler King
+      </Link>
       <a href={Resume} target="_blank" className="navbar-a" rel="noreferrer">
         Resume
       </a>
-    </header>
+      <Link className="navbar-a" to="/react-portfolio/magic">
+        8 Ball
+      </Link>
+    </nav>
   );
 };
 

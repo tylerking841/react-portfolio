@@ -3,6 +3,7 @@ import React from "react";
 const Sections = () => {
   return (
     <div>
+      <h1>My Projects</h1>
       <section>
         <a
           class="hyperlink"

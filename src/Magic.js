@@ -35,7 +35,7 @@ const Magic = () => {
       <h1 id="a">Magic 8 Ball</h1>
       <button onClick={getAnswer}>Get Answer</button>
       <div id="answer" class="answer">
-        Lorem Ipsum.
+        
       </div>
       <img id="ball" src={Ball} alt="Animated GIF" />
       <Footer />

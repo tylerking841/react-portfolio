@@ -1,4 +1,4 @@
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import Navbar from "./Navbar";
 import Magic from "./Magic";
 import Home from "./Home";
@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 function App() {
   ReactGA.initialize("G-DEGNYRHPH3");
-  ReactGA.pageview(document.location.pathname);
+  
 
   return (
     <>

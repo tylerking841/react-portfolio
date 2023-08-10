@@ -8,7 +8,6 @@ import { useEffect } from "react";
 
 function App() {
   ReactGA.initialize("G-DEGNYRHPH3");
-  
 
   return (
     <>

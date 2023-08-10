@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Sections from "./sections";
 
 const Home = () => {
+  
   return (
     <body>
       <div>
@@ -17,7 +18,7 @@ const Home = () => {
       </div>
       <Sections />
       <Footer />
-      {/* <Magic/> */}
+      {}
     </body>
   );
 };

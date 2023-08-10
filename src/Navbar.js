@@ -19,7 +19,7 @@ const Navbar = () => {
           "fadein 0.5s linear";
       }
     };
-
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
